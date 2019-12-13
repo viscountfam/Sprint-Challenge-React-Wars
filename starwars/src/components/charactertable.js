@@ -22,7 +22,12 @@ useEffect(() => {
         <div className="container">
             <div className="entry">
                 {people.map((people, index) => {
-                    return <CharacterCard key={index} name={people.name} gender={people.gender} eye_color={people.eye_color} homeworld={people.homeworld} films={people.films}/>
+                    return <CharacterCard key={index}
+                     name={people.name} 
+                     gender={people.gender}
+                      eye_color={people.eye_color}
+                       homeworld={people.homeworld}
+                        films={people.films}/>
                 })}
             </div>
         </div>
