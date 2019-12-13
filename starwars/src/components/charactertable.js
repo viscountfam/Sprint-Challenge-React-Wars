@@ -11,7 +11,7 @@ useEffect(() => {
         .get("https://swapi.co/api/people/")
         .then(response => {
             console.log(response);
-            setPeople(response.starwarsChars);
+            setPeople(response.data.results);
         })
         .catch(error => {
             console.log("data could not be retrieved", error);
@@ -26,8 +26,8 @@ useEffect(() => {
                      name={people.name} 
                      gender={people.gender}
                       eye_color={people.eye_color}
-                       homeworld={people.homeworld}
-                        films={people.films}/>
+                       height={people.height}
+                        hair_color={people.hair_color}/>
                 })}
             </div>
         </div>
